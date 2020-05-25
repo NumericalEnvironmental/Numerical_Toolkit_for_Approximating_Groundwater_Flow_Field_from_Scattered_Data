@@ -1,0 +1,4 @@
+constraint	x	y
+min	0.	0.
+max	500.	500.
+num	50	50
