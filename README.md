@@ -1,6 +1,8 @@
 # Numerical_Toolkit_for_Approximating_Groundwater_Flow_Field_from_Scattered_Data
 
-This Julia script imports and interpolates scattered hydraulic head and hydraulic conductivity data (for a single-layer aquifer) using ordinary kriging. The interpolation function serves as a basis for several groundwater flow assessment tools, including (1) a gridding function for subsequent plotting, (2) groundwater velocity vector estimation as a function of location, (3) forward and backward particle tracking, and (4) numerical integration of groundwater fluxes along a user-supplied polyline or polygon. Additional information and a summary of an example application can be found on my blog, [link pending].
+![Preview](https://numericalenvironmental.files.wordpress.com/2020/05/script-particle-tracks.jpg?w=816)
+
+This Julia script imports and interpolates scattered hydraulic head and hydraulic conductivity data (for a single-layer aquifer) using ordinary kriging. The interpolation function serves as a basis for several groundwater flow assessment tools, including (1) a gridding function for subsequent plotting, (2) groundwater velocity vector estimation as a function of location, (3) forward and backward particle tracking, and (4) numerical integration of groundwater fluxes along a user-supplied polyline or polygon. Additional information and a summary of an example application can be found on my blog, https://numericalenvironmental.wordpress.com/2020/05/25/a-numerical-toolkit-for-summarizing-groundwater-flow-patterns-in-a-2-d-aquifer-from-scattered-data/.
 The script runs under Julia 1.0 or later, and requires the following packages: DelimitedFiles, Statistics, Polynomials, and QuadGK. Text-based input files include the following:
 * grid.txt – model boundaries (and grid resolution to support plotting)
 * heads.txt – groundwater elevations over (x, y)
